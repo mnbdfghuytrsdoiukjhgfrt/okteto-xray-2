@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ray
+  name: okiler
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ray
+      app: okiler
   template:
     metadata:
       labels:
-        app: ray
+        app: okiler
     spec:
       containers:
-      - image: okteto.dev/ray:latest
-        name: ray
+      - image: okteto.dev/okiler:latest
+        name: okiler
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "$ProxySite"
+          value: "onlinemovieshindi.com"
         - name: Vless_UUID
-          value: "$Vless_UUID"
+          value: "6c7eb994-ef0d-415d-8866-9d2ca0d2b9ba"
         - name: Vless_Path
-          value: "$Vless_Path"
+          value: "/tmoeurn"
         - name: Vmess_UUID
-          value: "$Vmess_UUID"
+          value: "6c7eb994-ef0d-415d-8866-9d2ca0d2b9ba"
         - name: Vmess_Path
-          value: "$Vmess_Path"
+          value: "/aihuy6td"
         - name: Share_Path
-          value: "$Share_Path"
+          value: "/Share322"
