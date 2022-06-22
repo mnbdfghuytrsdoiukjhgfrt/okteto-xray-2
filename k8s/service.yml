@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: okiler
+  name: lictaw
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "okiler"
+  - name: "lictaw"
     port: 8080
   selector:
-    app: okiler
+    app: lictaw
