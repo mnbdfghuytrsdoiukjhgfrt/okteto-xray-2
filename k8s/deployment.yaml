@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: chihesd
+  name: hchile
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: chihesd
+      app: hchile
   template:
     metadata:
       labels:
-        app: chihesd
+        app: hchile
     spec:
       containers:
-      - image: okteto.dev/chihesd:latest
-        name: chihesd
+      - image: okteto.dev/hchile:latest
+        name: hchile
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "www4.watchserieshd.tv"
+          value: "www.freemusicarchive.org"
         - name: Vless_UUID
-          value: "5ee669c6-3d90-43f6-bd36-cd08dcef9294"
+          value: "9a93056a-5cbd-456e-8aae-98ca9ecb550b"
         - name: Vless_Path
-          value: "/rtyiuwef"
+          value: "/beoplyAS5"
         - name: Vmess_UUID
-          value: "5ee669c6-3d90-43f6-bd36-cd08dcef9294"
+          value: "9a93056a-5cbd-456e-8aae-98ca9ecb550b"
         - name: Vmess_Path
-          value: "/Suyr4ers"
+          value: "/jx7uwsdiy"
         - name: Share_Path
-          value: "/Share402"
+          value: "/Share051"
