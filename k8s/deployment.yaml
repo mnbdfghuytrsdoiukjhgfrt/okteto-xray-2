@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: okiler
+  name: lictaw
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: okiler
+      app: lictaw
   template:
     metadata:
       labels:
-        app: okiler
+        app: lictaw
     spec:
       containers:
-      - image: okteto.dev/okiler:latest
-        name: okiler
+      - image: okteto.dev/lictaw:latest
+        name: lictaw
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "onlinemovieshindi.com"
+          value: "beauty-upgrade.tw"
         - name: Vless_UUID
-          value: "6c7eb994-ef0d-415d-8866-9d2ca0d2b9ba"
+          value: "2530dd5d-f002-404d-8df5-f7114ecd18ec"
         - name: Vless_Path
-          value: "/tmoeurn"
+          value: "/g3rtujh"
         - name: Vmess_UUID
-          value: "6c7eb994-ef0d-415d-8866-9d2ca0d2b9ba"
+          value: "2530dd5d-f002-404d-8df5-f7114ecd18ec"
         - name: Vmess_Path
-          value: "/aihuy6td"
+          value: "/sfn34rtgv"
         - name: Share_Path
-          value: "/Share322"
+          value: "/Share659"
